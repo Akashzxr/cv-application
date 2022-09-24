@@ -1,7 +1,6 @@
 body,html{
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 .app{
     width: 100%;
@@ -9,6 +8,8 @@ body,html{
     flex-direction: column;
     align-items: center;
     background-color: rgb(219 219 219);
+    gap: 30px;
+    height: 100%;
 }
 #root{
     height: 100%;

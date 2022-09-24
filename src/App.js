@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Heading';
 import Form from './components/form/form';
+import Preview from './components/preview/preview';
 import "./App.css";
 
 class App extends Component{
@@ -10,6 +11,7 @@ class App extends Component{
       <div className="app">
          <Header/>
          <Form/>
+         <Preview/>
       </div>
      
     );

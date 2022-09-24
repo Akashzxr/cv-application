@@ -1,6 +1,6 @@
 .form{
     background-color: #e8edeb;
-    width: 793px;
+    width: 65.9%;
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
@@ -8,4 +8,61 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.description{
+    height: 100px;
+    resize: none;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+
+h3{
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.input:focus,.description:focus{
+    border: solid;
+    border-width: 1px;
+}
+
+
+button{
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+}
+button:hover{
+    background-color: rgb(29, 28, 28);
+}
+button:active{
+    background-color: black;
+}
+
+h1,h2,h3,h4{
+    margin: 0;
 }
