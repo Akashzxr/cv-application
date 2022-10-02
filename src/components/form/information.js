@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 
+
+
 class Information extends Component{
     constructor(props){
         super(props);
         this.state={
-            firstname:"first name",
+            firstname:"first naoe",
             lastname:"",
             title:"",
             address:"",
@@ -12,15 +14,28 @@ class Information extends Component{
             email:"",
             description:"",
         }
+
+        this.onTrigger=this.onTrigger.bind(this);
     }
+//
+    onTrigger(e) {
+    
+        const v = e.target.value;
+        this.props.parentCallback(v);
+        
+        //event.preventDefault();
+    }
+//
 
 
     render(){
+
         return(
        <div className="information">
           <h3>Personal Information</h3>
           <div className="inputs">
-          <input className="input" type={"text"} placeholder="firstname"/>
+          <input name = "myname" className="input" type={"text"}  onChange={this.onTrigger}  placeholder="firstname"/>
+          <button>ok</button>
           <input className="input" type={"text"} placeholder="Last name"/>
           <input className="input" type={"text"} placeholder="Title"/>
           <input className="input" type={"text"} placeholder="Address"/>
@@ -34,4 +49,4 @@ class Information extends Component{
 
 }
 
-export default Information;
+export   {Information};

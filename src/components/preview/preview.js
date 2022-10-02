@@ -6,7 +6,10 @@ import "../../styles/preview.css";
 
 class Preview extends Component{
 
+  
+
   render(){
+    
     return(
         <div className="preview">
            <Heading/>
