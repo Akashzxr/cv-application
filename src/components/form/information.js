@@ -23,27 +23,7 @@ class Information extends Component{
         const value = e.target.value;
         const name = e.target.name;
         //this.setState({[name]:value})
-        if(name==="firstname"){
-            this.props.parentCallback(value,"firstname");
-        }
-        else if(name==="lastname"){
-            this.props.parentCallback(value,"lastname");
-        }
-        else if(name==="title"){
-            this.props.parentCallback(value,"title");
-        }
-        else if(name==="address"){
-            this.props.parentCallback(value,"address");
-        }
-        else if(name==="phonenumber"){
-            this.props.parentCallback(value,"phonenumber");
-        }
-        else if(name==="email"){
-            this.props.parentCallback(value,"email");
-        }
-        else{
-            this.props.parentCallback(value,"description");
-        }
+        this.props.parentCallback(value,name);
     }
 
 
@@ -53,8 +33,8 @@ class Information extends Component{
        <div className="information" >
           <h3>Personal Information</h3>
           <form className="inputs">
-          <input name ="firstname" className="input" type={"text"} onChange={this.onTrigger} placeholder="firstname"/>
-          <input name="lastname" onChange={this.onTrigger} className="input" type={"text"}  placeholder="Last name"/>
+          <input name ="fname" className="input" type={"text"} onChange={this.onTrigger} placeholder="firstname"/>
+          <input name="lname" onChange={this.onTrigger} className="input" type={"text"}  placeholder="Last name"/>
           <input name="title" onChange={this.onTrigger} className="input" type={"text"} placeholder="Title"/>
           <input name="address" onChange={this.onTrigger} className="input" type={"text"} placeholder="Address"/>
           <input name="phonenumber" onChange={this.onTrigger} className="input" type={"text"} placeholder="Phone number"/>

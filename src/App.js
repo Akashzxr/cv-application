@@ -20,29 +20,7 @@ class App extends Component{
   }
 
   handlecallback=(info,name)=>{
-    if(name==="firstname"){
-      this.setState({fname:info});
-    }
-    else if(name==="lastname"){
-      this.setState({lname:info});
-    }
-    else if(name==="title"){
-      this.setState({title:info})
-    }
-    else if(name==="address"){
-      this.setState({address:info})
-    }
-    else if(name==="phonenumber"){
-      this.setState({phonenumber:info})
-    }
-    else if(name==="email"){
-      this.setState({email:info})
-    }
-    else{
-      this.setState({description:info})
-    }
-    
-    
+    this.setState({[name]:info});
   }
 
   render(){
