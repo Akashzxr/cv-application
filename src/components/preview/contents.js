@@ -3,12 +3,13 @@ import React, { Component } from "react";
 class Contents extends Component{
 
        render(){
+        const {description}=this.props;
         return(
          <div className="contents">
 
            <div className="preview-contents">
               <h3 className="cstyle">Description</h3>
-              Description
+              {description}
            </div>
 
            <div className="preview-contents">

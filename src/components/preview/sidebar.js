@@ -5,23 +5,24 @@ class Sidebar extends Component{
     
 
     render(){
+      const {address,email,phonenumber}=this.props;
         return(
          <div className="sidebar">
             <h3 className="sidebar-head">Personal Details</h3>
             <div className="details">
                 <div>
                   <h4>Address</h4>
-                  address
+                  {address}
                </div>
 
                <div>
                   <h4>Phone Number</h4>
-                  phone number
+                  {phonenumber}
                </div>
 
                <div>
                   <h4>Email</h4>
-                  email
+                  {email}
                </div>
 
             </div>
