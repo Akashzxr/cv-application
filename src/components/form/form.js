@@ -17,21 +17,16 @@ constructor(props){
   
 
 getinfo=(childData,name)=>{
-    //this.setState({name: childData});
     this.props.newinfo(childData,name);
  }
 
      
     render(){
-        //
-        const {name} = this.state;
-        //
         return(
         <div className="form">
          <Information parentCallback = {this.getinfo}/>
-         {name}
-         <Experience/>
-         <Education/>
+         <Experience parentCallback = {this.getinfo}/>
+         <Education parentCallback = {this.getinfo}/>
         </div>
         );
     }

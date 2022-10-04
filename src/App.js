@@ -16,6 +16,17 @@ class App extends Component{
       phonenumber:"",
       email:"",
       description:"",
+      position:"",
+      company:"",
+      city:"",
+      Efrom:"",
+      Eto:"",
+      university:"",
+      ucity:"",
+      subject:"",
+      degree:"",
+      ufrom:"",
+      uto:"",
     }
   }
 
@@ -24,13 +35,16 @@ class App extends Component{
   }
 
   render(){
-    const {fname,lname,title,address,phonenumber,email,description}=this.state;
+    const {fname,lname,title,address,phonenumber,email,description,
+      position,company,city,Efrom,Eto,
+      university,ucity,subject,degree,ufrom,uto}=this.state;
     return(
       <div className="app">
          <Header/>
-         {address}
          <Form newinfo={this.handlecallback}/>
-         <Preview fname={fname} lname={lname} title={title} address={address} phonenumber={phonenumber} email={email} description={description} />
+         <Preview fname={fname} lname={lname} title={title} address={address} phonenumber={phonenumber} email={email} description={description}
+         position={position} company={company} city={city} Efrom={Efrom} Eto={Eto} 
+         university={university} ucity={ucity} subject={subject} degree={degree} ufrom={ufrom} uto={uto}  />
       </div>
      
     );

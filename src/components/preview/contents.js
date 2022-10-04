@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Contents extends Component{
 
        render(){
-        const {description}=this.props;
+        const {description,position,company,city,Efrom,Eto, university,ucity,subject,degree,ufrom,uto}=this.props;
         return(
          <div className="contents">
 
@@ -15,10 +15,10 @@ class Contents extends Component{
            <div className="preview-contents">
               <h3 className="cstyle">Experience</h3>
               <div className="main-details">
-                <h4>from - to</h4>
+                <h4>{Efrom} - {Eto}</h4>
                 <div className="content-details">
-                    <h4>position</h4>
-                    <div>company,city</div>
+                    <h4>{position}</h4>
+                    <div>{company},{city}</div>
                 </div>
               </div>
            </div>
@@ -26,11 +26,11 @@ class Contents extends Component{
            <div className="preview-contents">
               <h3 className="cstyle">Education</h3>
               <div className="main-details">
-                <h4>from - to</h4>
+                <h4>{ufrom} - {uto}</h4>
                 <div className="content-details">
-                    <h4>university</h4>
-                    <div>Degree :degree</div>
-                    <div>Subject:subject</div>
+                    <h4>{university},{ucity}</h4>
+                    <div>Degree :{degree}</div>
+                    <div>Subject:{subject}</div>
                 </div>
               </div>
            </div>
