@@ -91,12 +91,19 @@
         font-size: 8px;
     }
     .main-details{
-        gap: 3px;
+        gap: 9px;
     }
     .contents{
         padding: 8px;
+        font-size: 63%;
     }
     .sidebar-head{
         font-size: 12px;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .name,.title{
+        margin-left: 11px
     }
 }
