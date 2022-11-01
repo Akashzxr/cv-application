@@ -18,7 +18,8 @@ class Contents extends Component{
                 <h4>{Efrom} - {Eto}</h4>
                 <div className="content-details">
                     <h4>{position}</h4>
-                    <div>{company},{city}</div>
+                    <div>{company},</div>
+                    <div>{city}</div>
                 </div>
               </div>
            </div>

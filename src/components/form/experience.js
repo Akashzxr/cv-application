@@ -23,8 +23,8 @@ class Experience extends Component{
           <input name="city" onChange={this.onTrigger} className="input" type={"text"} placeholder="City"/>
           <input name="Efrom" onChange={this.onTrigger} className="input" type={"text"} placeholder="From"/>
           <input name="Eto" onChange={this.onTrigger} className="input" type={"text"} placeholder="To"/>
-          <button>Delete</button>
-          <button>Add</button>
+         {/* <button>Delete</button>
+          <button>Add</button>*/}
           </div>
        </div>
         );

@@ -23,8 +23,8 @@ onTrigger(e) {
           <input name="subject" onChange={this.onTrigger} className="input" type={"text"} placeholder="Subject"/>
           <input name="ufrom" onChange={this.onTrigger} className="input" type={"text"} placeholder="From"/>
           <input name="uto" onChange={this.onTrigger} className="input" type={"text"} placeholder="To"/>
-          <button>Delete</button>
-          <button>Add</button>
+         {/*  <button>Delete</button>
+          <button>Add</button>*/}
           </div>
        </div>
         );

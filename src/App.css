@@ -10,6 +10,7 @@ body,html{
     background-color: rgb(219 219 219);
     gap: 30px;
     height: 100%;
+    padding-bottom: 6%;
 }
 #root{
     height: 100%;
