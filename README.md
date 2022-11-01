@@ -1,5 +1,16 @@
+# CV-APPLICATION
+
+This a cv application project created with react.js with basic functionalities.we can enter our information and it will create a cv-preview.
+feautures:
+1)update's the preview section immediatly on changing of input.
+2)responsive on all devices.
+
+this is just a basic version of this application.
+
 Site live at:
 https://akashzxr.github.io/cv-application/
+
+
 
 # Getting Started with Create React App
 
